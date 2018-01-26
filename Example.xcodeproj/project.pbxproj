@@ -20,7 +20,6 @@
 		20FA085C201B5F9C00F7D554 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0857201B5EF700F7D554 /* GeneratedMocks.swift */; };
 		20FA085E201B607500F7D554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FA085D201B607500F7D554 /* Foundation.framework */; };
 		20FA085F201B608600F7D554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FA085D201B607500F7D554 /* Foundation.framework */; };
-		20FA0860201B61D100F7D554 /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209EA67B201B569F0058FD3D /* Cuckoo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +29,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 209EA61F201B2F710058FD3D;
 			remoteInfo = Example;
-		};
-		209EA67A201B569F0058FD3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 209EA674201B569F0058FD3D /* Cuckoo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 183D03FB1C4691C600EBAEF3;
-			remoteInfo = Cuckoo;
-		};
-		209EA67C201B569F0058FD3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 209EA674201B569F0058FD3D /* Cuckoo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 183D04051C4691C600EBAEF3;
-			remoteInfo = CuckooTests;
 		};
 		20FA0851201B5E5A00F7D554 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -68,7 +53,6 @@
 		209EA651201B2FAB0058FD3D /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		209EA653201B2FB50058FD3D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		209EA66E201B303B0058FD3D /* Contracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contracts.swift; sourceTree = "<group>"; };
-		209EA674201B569F0058FD3D /* Cuckoo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cuckoo.xcodeproj; path = Carthage/Checkouts/Cuckoo/Cuckoo.xcodeproj; sourceTree = SOURCE_ROOT; };
 		20FA084C201B5E5A00F7D554 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FA084E201B5E5A00F7D554 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		20FA0850201B5E5A00F7D554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20FA0860201B61D100F7D554 /* Cuckoo.framework in Frameworks */,
 				20FA085F201B608600F7D554 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,18 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				20FA085D201B607500F7D554 /* Foundation.framework */,
-				209EA674201B569F0058FD3D /* Cuckoo.xcodeproj */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		209EA675201B569F0058FD3D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				209EA67B201B569F0058FD3D /* Cuckoo.framework */,
-				209EA67D201B569F0058FD3D /* CuckooTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		20FA084D201B5E5A00F7D554 /* ExampleTests */ = {
@@ -272,12 +245,6 @@
 			mainGroup = 209EA617201B2F710058FD3D;
 			productRefGroup = 209EA621201B2F710058FD3D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 209EA675201B569F0058FD3D /* Products */;
-					ProjectRef = 209EA674201B569F0058FD3D /* Cuckoo.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				209EA61F201B2F710058FD3D /* Example */,
@@ -286,23 +253,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		209EA67B201B569F0058FD3D /* Cuckoo.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cuckoo.framework;
-			remoteRef = 209EA67A201B569F0058FD3D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		209EA67D201B569F0058FD3D /* CuckooTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CuckooTests.xctest;
-			remoteRef = 209EA67C201B569F0058FD3D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		209EA61E201B2F710058FD3D /* Resources */ = {
@@ -525,6 +475,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD5DLNJR58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -543,6 +497,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD5DLNJR58;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hu.mito.Example;
@@ -591,6 +549,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD5DLNJR58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -610,6 +572,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD5DLNJR58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hu.mito.ExampleTests;

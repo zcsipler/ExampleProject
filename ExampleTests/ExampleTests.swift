@@ -21,6 +21,9 @@ class ExampleTests: XCTestCase {
         mockInteractor = MockInteractorInputProtocol()
 
         sut = Presenter(interactor: mockInteractor)
+        stub(mockInteractor) { stub in
+            when(stub.presenter.set(sut)).thenDoNothing()
+        }
     }
 
     override func tearDown() {
@@ -29,7 +32,7 @@ class ExampleTests: XCTestCase {
 
     func test_viewDidLoad() {
         stub(mockInteractor) { stub in
-            when(stub.fetchData()).thenDoNothing(_)
+            when(stub.fetchData()).thenDoNothing()
         }
 
         sut.viewDidLoad()

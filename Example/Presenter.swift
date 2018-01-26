@@ -8,11 +8,13 @@
 
 import Foundation
 
-class Presenter {
+class Presenter: InteractorOutputProtocol {
     var interactor: InteractorInputProtocol!
 
     init(interactor: InteractorInputProtocol) {
         self.interactor = interactor
+
+        self.interactor.presenter = self
     }
 
     func viewDidLoad() {
