@@ -16,10 +16,10 @@
 		209EA652201B2FAB0058FD3D /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EA651201B2FAB0058FD3D /* Interactor.swift */; };
 		209EA654201B2FB50058FD3D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EA653201B2FB50058FD3D /* Presenter.swift */; };
 		209EA66F201B303B0058FD3D /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EA66E201B303B0058FD3D /* Contracts.swift */; };
+		20B557F120208519009F28ED /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B557EE202084FD009F28ED /* Cuckoo.framework */; };
+		20B557F22020851E009F28ED /* Cuckoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B557EE202084FD009F28ED /* Cuckoo.framework */; };
 		20FA084F201B5E5A00F7D554 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA084E201B5E5A00F7D554 /* ExampleTests.swift */; };
 		20FA085C201B5F9C00F7D554 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA0857201B5EF700F7D554 /* GeneratedMocks.swift */; };
-		20FA085E201B607500F7D554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FA085D201B607500F7D554 /* Foundation.framework */; };
-		20FA085F201B608600F7D554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FA085D201B607500F7D554 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 209EA61F201B2F710058FD3D;
 			remoteInfo = Example;
+		};
+		20B557ED202084FD009F28ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20B557E7202084FD009F28ED /* Cuckoo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 183D03FB1C4691C600EBAEF3;
+			remoteInfo = Cuckoo;
+		};
+		20B557EF202084FD009F28ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20B557E7202084FD009F28ED /* Cuckoo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 183D04051C4691C600EBAEF3;
+			remoteInfo = CuckooTests;
 		};
 		20FA0851201B5E5A00F7D554 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -53,11 +67,11 @@
 		209EA651201B2FAB0058FD3D /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		209EA653201B2FB50058FD3D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		209EA66E201B303B0058FD3D /* Contracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contracts.swift; sourceTree = "<group>"; };
+		20B557E7202084FD009F28ED /* Cuckoo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cuckoo.xcodeproj; path = Carthage/Checkouts/Cuckoo/Cuckoo.xcodeproj; sourceTree = SOURCE_ROOT; };
 		20FA084C201B5E5A00F7D554 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FA084E201B5E5A00F7D554 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		20FA0850201B5E5A00F7D554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20FA0857201B5EF700F7D554 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
-		20FA085D201B607500F7D554 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20FA085E201B607500F7D554 /* Foundation.framework in Frameworks */,
+				20B557F120208519009F28ED /* Cuckoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20FA085F201B608600F7D554 /* Foundation.framework in Frameworks */,
+				20B557F22020851E009F28ED /* Cuckoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +104,7 @@
 		209EA617201B2F710058FD3D = {
 			isa = PBXGroup;
 			children = (
-				209EA670201B567A0058FD3D /* Frameworks */,
+				20B557E6202084F0009F28ED /* Frameworks */,
 				209EA622201B2F710058FD3D /* Example */,
 				20FA084D201B5E5A00F7D554 /* ExampleTests */,
 				209EA642201B2F720058FD3D /* ExampleUITests */,
@@ -133,12 +147,21 @@
 			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
-		209EA670201B567A0058FD3D /* Frameworks */ = {
+		20B557E6202084F0009F28ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20FA085D201B607500F7D554 /* Foundation.framework */,
+				20B557E7202084FD009F28ED /* Cuckoo.xcodeproj */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		20B557E8202084FD009F28ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20B557EE202084FD009F28ED /* Cuckoo.framework */,
+				20B557F0202084FD009F28ED /* CuckooTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		20FA084D201B5E5A00F7D554 /* ExampleTests */ = {
@@ -245,6 +268,12 @@
 			mainGroup = 209EA617201B2F710058FD3D;
 			productRefGroup = 209EA621201B2F710058FD3D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 20B557E8202084FD009F28ED /* Products */;
+					ProjectRef = 20B557E7202084FD009F28ED /* Cuckoo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				209EA61F201B2F710058FD3D /* Example */,
@@ -253,6 +282,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		20B557EE202084FD009F28ED /* Cuckoo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cuckoo.framework;
+			remoteRef = 20B557ED202084FD009F28ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		20B557F0202084FD009F28ED /* CuckooTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CuckooTests.xctest;
+			remoteRef = 20B557EF202084FD009F28ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		209EA61E201B2F710058FD3D /* Resources */ = {

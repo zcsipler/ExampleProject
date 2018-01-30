@@ -10,6 +10,10 @@ import XCTest
 import Cuckoo
 @testable import Example
 
+func match(_ value: InteractorOutputProtocol) -> ParameterMatcher<InteractorOutputProtocol?> {
+    return equal(to: value, equalWhen: { $0 === $1 })
+}
+
 class ExampleTests: XCTestCase {
     private var mockInteractor: MockInteractorInputProtocol!
 
@@ -20,10 +24,11 @@ class ExampleTests: XCTestCase {
 
         mockInteractor = MockInteractorInputProtocol()
 
-        sut = Presenter(interactor: mockInteractor)
         stub(mockInteractor) { stub in
-            when(stub.presenter.set(sut)).thenDoNothing()
+            when(stub.presenter.set(match(sut))).thenDoNothing()
         }
+        
+        sut = Presenter(interactor: mockInteractor)
     }
 
     override func tearDown() {
@@ -37,5 +42,4 @@ class ExampleTests: XCTestCase {
 
         sut.viewDidLoad()
     }
-    
 }
