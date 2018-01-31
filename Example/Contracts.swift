@@ -13,6 +13,8 @@ import Foundation
 public protocol InteractorInputProtocol: class {
     weak var presenter: InteractorOutputProtocol! { get set }
 
+    var onError: ((String) -> Void) { get }
+
     func fetchData()
 }
 

@@ -29,6 +29,14 @@ class MockInteractorInputProtocol: InteractorInputProtocol, Cuckoo.Mock {
         
     }
     
+    // ["name": "onError", "accesibility": "public", "@type": "InstanceVariable", "type": "((String) -> Void)", "isReadOnly": true]
+     var onError: ((String) -> Void) {
+        get {
+            return cuckoo_manager.getter("onError", original: observed.map { o in return { () -> ((String) -> Void) in o.onError }})
+        }
+        
+    }
+    
 
     
 
@@ -59,6 +67,10 @@ class MockInteractorInputProtocol: InteractorInputProtocol, Cuckoo.Mock {
             return .init(manager: cuckoo_manager, name: "presenter")
         }
         
+        var onError: Cuckoo.ToBeStubbedReadOnlyProperty<((String) -> Void)> {
+            return .init(manager: cuckoo_manager, name: "onError")
+        }
+        
         
         func fetchData() -> Cuckoo.StubNoReturnFunction<()> {
             let matchers: [Cuckoo.ParameterMatcher<Void>] = []
@@ -84,6 +96,10 @@ class MockInteractorInputProtocol: InteractorInputProtocol, Cuckoo.Mock {
             return .init(manager: cuckoo_manager, name: "presenter", callMatcher: callMatcher, sourceLocation: sourceLocation)
         }
         
+        var onError: Cuckoo.VerifyReadOnlyProperty<((String) -> Void)> {
+            return .init(manager: cuckoo_manager, name: "onError", callMatcher: callMatcher, sourceLocation: sourceLocation)
+        }
+        
 
         
         @discardableResult
@@ -105,6 +121,13 @@ class MockInteractorInputProtocol: InteractorInputProtocol, Cuckoo.Mock {
         }
         
         set { }
+        
+    }
+    
+     var onError: ((String) -> Void) {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (((String) -> Void)).self)
+        }
         
     }
     

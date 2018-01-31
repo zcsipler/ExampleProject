@@ -19,5 +19,6 @@ class Presenter: InteractorOutputProtocol {
 
     func viewDidLoad() {
         interactor.fetchData()
+        interactor.onError("Error")
     }
 }
